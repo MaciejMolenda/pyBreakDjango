@@ -1,0 +1,145 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Maciej Molenda - portfolio/pyBreak</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,500&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+	<div class="container my-4">
+		<div class="row">
+			<div class="col-lg-3 mb-3 mb-lg-0">
+				<div class="card card-body h-100 border-light" style="text-align: center">
+					<img id="profile" src="{% static 'portfolio/CV.jpg' %}">
+					<hr>
+                    <h2>Maciej Molenda</h2>
+                    <p class="d-flex justify-content-center">Python developer</p>
+				</div>
+			</div>
+
+            <div class="col-lg-9">
+				<div class="card card-body h-100 border-light">
+					<h2 class="d-flex justify-content-center">Facts about me</h2>
+					<hr>
+					<p>I am self-taught Python developer with 1 year of professional experience and 1 year of gaining knowledge by myself, before I got the chance to be hired in my first programming job.</p>
+					<p>I have decided to learn Python, because it's easy to learn and really friendly language.
+                        After two years I do not regret this decision at all, as during this time I have developed myself a lot in terms of working with data and Python skills helped me to create some successful process automation projects in my daily work.</p>
+
+                    <p>My current experience is mainly based on automating finance and masterdata processes in close cooperation with the clients.
+                    I was able to create some powerful applications from scratch, which helped my clients to reduce daily-routine work, like Excel reporting, or data transfer between user and client's masterdata systems in amount of up to 1 FTE per month.</p>
+
+                    <p>Besides that, I was also able to support some projects about data extraction from cloud servers with help of SQL queries.</p>
+
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-6 mb-4 mb-lg-0">
+                <img class="card-img-top images" id="skillspic" src="{% static 'portfolio/skills.jpg' %}" alt="Card image cap">
+				<div class="card card-body">
+                    <h2 class="my-lg-4 card-title">My skills</h2>
+                    <hr class="mt-lg-4">
+                    <div>
+                        <h3 class="card-title">Python 3</h3>
+                        <br>
+                        <p>Python is my best-known programming language. I have knowledge and professional experience in areas of data <u>scraping</u>,
+                            data <u>processing</u>, data <u>visualization</u> and <u>automation apps development</u>. Below technologies are my strongest points:</p>
+                        <ul>
+                            <li>Pandas/NumPy</li>
+                            <li>Selenium, BeautifulSoup4</li>
+                            <li>Matplotlib</li>
+                            <li>TkInter GUI</li>
+                            <li>Object-Oriented Programming</li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div>
+                        <h3 class="card-title">Full-stack development</h3>
+                        <br>
+                        <p>Except data processing, I am constantly developing myself in term of full-stack development.
+                                I have basic knowledge about <b>Django</b>, acquired during interactive courses on platforms like Udemy.com and Pluralsight.com.</p>
+                        <p>My Python knowledge that can be used as a backend is also supported by basic knowledge of <b>HTML</b>, <b>Bootstrap 3 and 4</b>,
+                        <b>CSS</b> and <b>Javascript/JQuery</b> fundamentals.</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h3 class="card-title">SQL, Jupyter, Linux</h3>
+                        <br>
+                        <p>I have some experience with SQL queries - especially in SQLite3 Python's library. I can use Jupyter Notebook efficiently in case of Python coding. Linux is also convenient to work for me, as I use it in my private programming practices.</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h3 class="card-title">What's next?</h3>
+                        <br>
+                        <p>I would like to continue my self-development in terms of Django framework and frontend staff, which would help me to become proficient full-stack developer.
+                        I am also focused on expanding my skills in SQL and in things related with cloud servers support.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Photo: Chris Ried, Unsplash</small>
+                    </div>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+                <img class="card-img-top" id="pybreakpic" src="{% static 'portfolio/pybreakback.jpg' %}" alt="Card image cap">
+				<div class="card card-body">
+                    <div>
+                        <h2 class="card-title">pyBreak - my Python project</h2>
+                        <span class="d-flex justify-content-center">
+                            <a href="http://www.bitly.com/pyBreak" class="btn btn-lg btn-success">Source link</a>
+                        </span>
+                    </div>
+                    <hr>
+                    <div>
+                        <h3 class="card-title">Case study</h3>
+                        <br>
+                        <p>'pyBreak' is a project created in goal to show my Python skills in areas of web scraping,
+                            data processing and analysis with properly prepared dataset. It's strictly connected with my hobbies
+                            - tennis is one of my favourite sports, which has many interesting aspects that are the subject of my data analysis.</p>
+                        <br>
+                        <p>Project presents the work performed in case of scraping two different data sources with help of Selenium library.
+                        Then, scraped data is being processed in Pandas. Both technologies are well-known for me due to my daily professional job.
+                        Further steps regarding the choice of specific dataset's parts for particular data analysis requires the ability to perform proper
+                            SQL queries (SQLite3 in this case), which results are shown by
+                        data visualization in popular Matplotlib.</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h3 class="card-title">Problem solving</h3>
+                        <br>
+                        <ul>
+                            <li>Data comes from two different sources, which are needed to be parsed and standarized.</li>
+                            <li>Standarization is needed due to different approach of presenting date formats, player's naming and matches scores' patterns.</li>
+                            <li>Data should be processed in the way which allows to merge both sources into one project's base dataframe.</li>
+                            <li>SQL and visualization skills are helpful to present interesting content behind the data.</li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div>
+                        <h3 class="card-title">What's next?</h3>
+                        <br>
+                        <p>Plans for the future relate to present the results of pyBreak backend job (which is done) in form of interactive dashboards
+                        here in the Django web application. Work is in progress.</p>
+                    </div>
+                    <div class="d-none d-lg-block">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="card-footer mt-lg-2">
+                      <small class="text-muted">Photo: Jeanne, superiorwallpapers.com</small>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <link href="{% static 'portfolio/home.css' %}" rel="stylesheet" type="text/css">
+</body>
+</html>
