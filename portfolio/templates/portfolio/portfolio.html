@@ -1,0 +1,302 @@
+{% load static %}
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Maciej Molenda - portfolio/pyBreak</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Raleway:wght@200;300;400;600&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="#"> 
+    </head>
+
+
+    <body data-spy="scroll" data-target="#navbarSpy">
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a href="#" class="navbar-brand">
+                <h3 class="mb-0">Portfolio</h3>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSpy">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSpy">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#start" class="nav-link">Start</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about-me" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a href="#skills-hobbies" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a href="#hobbies" class="nav-link">Hobbies</a>
+                    </li>
+                    <li class="nav-item d-none d-lg-inline">
+                        <a href="#skills-hobbies" class="nav-link">Skills and hobbies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#pybreak" class="nav-link">pyBreak</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="row starting" id="start" style="height: 80%;">
+            <div class="col-lg-3 p-0 photo-box">
+                <div class="card card-body h-100 border-light box" style="text-align: center">
+                    <img id="profile" src="{% static 'portfolio/img/CV.jpg' %}">
+                    <hr>
+                    <h2>Maciej Molenda</h2>
+                    <p class="d-flex justify-content-center">Python developer</p>
+                </div>
+            </div>
+
+            <div class="col-lg-9 pt-3 box infobox text-center">
+                <div class="row" style="height: 100%;">
+                    <div class="col-lg-4">
+                        <h1>Profiles</h1>
+                        <div class="row" id="profile-icons">
+                            <div class="col-8 offset-2 col-sm-6 offset-sm-3 col-md-4 offset-md-4 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2 d-flex justify-content-between">
+                                <a href="https://www.github.com/maciejmolenda" target="_blank">
+                                    <i class="fab fa-github fa-5x text-white"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/maciej-molenda-973a5819a/" target="_blank">
+                                    <i class="fab fa-linkedin-in fa-5x text-white"></i>
+                                </a>
+                            </div>
+                            
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="col-lg-4">
+                        <h1>Contact</h1>
+                        <div class="d-flex flex-column align-items-center" id="contact-icons">
+                            <p><i class="fas fa-envelope fa-0.7x d-lg-none d-xl-inline"></i> maciej.molenda@protonmail.com</p>
+                            <p><i class="fas fa-phone fa-0.7x"></i> +48 697-085-184</p>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="col-lg-4">
+                        <h1>Resume</h1>
+                        <div class="d-flex flex-column align-items-center" id="cv-div">
+                            <a href="{% static 'portfolio/CV.pdf' %}" class="btn btn-lg mt-2 tabs-button border" id="cv-button"><i class="fas fa-download fa-3x text-white mt-2"></i><p class="mt-2"><strong>DOWNLOAD</strong></p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-me">
+            <div class="container text-center" id="about-container">
+                <h1 class="mb-5">Facts about me</h1>
+                <div class="row border" style="border-radius: 25px; max-width:100%;" id="facts-box">
+                    <div class="col-lg-6 p-3 px-xl-5">
+                        <h2>Programming journey</h2>
+                        <hr>
+                        <p class="lead mt-4">I am self-taught Python developer with 1,5 year of professional experience and 1 year of gaining knowledge by myself, before I got the chance to be hired in my first programming job.</p>
+                        <p class="lead mt-4">I have decided to learn Python at first, because it's friendly and easy to learn language for begginers.
+                            After two years I do not regret this decision at all, as during this time I have developed myself a lot in terms of working with data and Python skills helped me to create some successful process automation projects in my daily work.</p>
+
+                        <p class="lead mt-4">My professional experience is mainly based on automating finance and masterdata processes in close cooperation with the clients.
+                        I was able to create some powerful applications from scratch, which helped my clients to reduce daily-routine work, like Excel reporting, or data transfer between user and client's masterdata systems. Those improvements were assesed in amount of up to 1 FTE per month.</p>
+
+                        <p class="lead mt-4">Besides that, I was also able to support some projects related with data extraction from cloud servers with help of SQL queries.</p>
+                        <p class="lead mt-4">Currently, I am also constantly expanding my knowledge in areas of web development. I have learned the basics of Django web framework and Javascript language in goal to prepare my personal pyBreak project. 
+                            I also explore the techniques of frontend with really quite knowledge of Bootstrap 4, as a good graphic complement of HTML 5/CSS 3 basics.</p> 
+                    </div>
+                    <div class="col-lg-6 p-3 px-xl-5">
+                        <h2>Work experience</h2>
+                        <hr>
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="{% static 'portfolio/img/dmc.png' %}">
+                            </div>
+                            <div class="col-8">
+                                <h4>2019-present: Python Developer</h4>
+                                <p class="lead">I'm a first contact person delegated in order to automate or improve the processes for the clients. During projects lasting several months, I try to proactively solve the problems with use of programming skills and try to improve the work of the teams.</p>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-4">
+                                <img src="{% static 'portfolio/img/fujitsu.png' %}">
+                            </div>
+                            <div class="col-8">
+                                <h4>2019: Frontend Developer (internship)</h4>
+                                <p class="lead">During 3 months period of internship, I have learned the basics of frontend development in areas of HTML5 and CSS3. I have managed to understand the rules of simple, responsive websites development due to involvement in creation of dashboard output for R&D department.</p>
+                            </div>
+                        </div>
+                        <h2 class="mt-5">Education</h2>
+                        <hr>
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="{% static 'portfolio/img/ul.png' %}">
+                            </div>
+                            <div class="col-8">
+                                <ul>
+                                    <li><p>2020: Master's Degree - Finance and Accounting</p></li>
+                                    <li><p>2018: Bachelor's Degree - Accounting</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills-hobbies">
+            <div class="container-fluid text-center mt-2 p-0" style="width:85%">
+                <div class="row mt-4" id="skillss">
+                    <div class="col-xl-6 p-3">
+                        <div class="card border-0">
+                            <img class="card-img-top images" id="skillspic" src="{% static 'portfolio/img/skills.jpg' %}" alt="Card image cap">
+                            <div class="card-header">
+                                <h2 class="card-title my-4 my-lg-5 my-xl-3">My skills</h2>
+                                <ul class="nav nav-tabs nav-fill nav-justify card-header-tabs" id="skills-card" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#python" data-toggle="tab" aria-controls="python" aria-selected="true"><img src="https://img.icons8.com/color/96/000000/python.png"/>
+                                            <br>
+                                            <p>Python 3</p></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link"  href="#django" data-toggle="tab" aria-controls="webdev" aria-selected="false"><img src="https://img.icons8.com/material-sharp/96/000000/django.png"/>
+                                            <br>
+                                            <p>Django</p></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#frontend" data-toggle="tab" aria-controls="sql" aria-selected="false"><img src="https://img.icons8.com/color/96/000000/bootstrap.png"/>
+                                            <br>
+                                            <p>Frontend</p></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#javascript" data-toggle="tab" aria-controls="future" aria-selected="false"><img src="https://img.icons8.com/color/96/000000/javascript.png"/>
+                                            <br>
+                                            <p>Javascript</p></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#sql" data-toggle="tab" aria-controls="future" aria-selected="false"><img src="https://img.icons8.com/wired/96/000000/database-export.png"/>
+                                            <br>
+                                            <p>SQL</p></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#envs" data-toggle="tab" aria-controls="future" aria-selected="false"><img src="https://img.icons8.com/fluent/96/000000/visual-studio-code-2019.png"/>
+                                            <br>
+                                            <p>Environments</p></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <div class="tab-content mt-3">
+                                    <div class="tab-pane active" id="python" role="tabpanel" aria-labelledby="python-tab">   
+                                        <p>Python is my best-known programming language. That is the technology, which I use predominatingly in my professional job and in private projects. Thanks to Python's usefulness, I can perform tasks related with data management in many ways. I have knowledge and professional experience in areas of data <u>scraping</u>,
+                                        data <u>processing</u>, data <u>visualization</u> and <u>automation apps development</u>.</p>
+                                        <p>Those features are my strongest points:</p>
+                                        <ul>
+                                            <li>Pandas, NumPy</li>
+                                            <li>Selenium, BeautifulSoup4</li>
+                                            <li>Matplotlib</li>
+                                            <li>OpenPyXL</li>
+                                            <li>Object-Oriented Programming</li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="tab-pane" id="django" role="tabpanel" aria-labelledby="django-tab">   
+                                        <p>Except data processing, I am constantly learning in area of full-stack development. This pyBreak application along with the included portfolio is created with use of my <b>Django</b> framework coding abilities,
+                                        acquired during interactive courses on platforms like Pluralsight.com and Udemy.</p>
+                                        <p>I know the rules of creating the web app structure in Django, with well-controled Model-Template-View workflow. 
+                                            My Python knowledge helps me to create a backend, stored with SQLite3. Ability to manage the relations between templates 
+                                            and static files, backed by basic frontend skills,  makes me able to produce the responsive output for the user.</p>    
+                                    </div>
+    
+                                     <div class="tab-pane" id="frontend" role="tabpanel" aria-labelledby="frontend-tab">   
+                                        <p>My strongest frontend skill is Bootstrap 4. I know the structures of useful Bootstrap's features like grid and flexbox, which makes the work in terms of creating responsive websites and managing the HTML elements much easier.
+                                            I am able to use some good looking Bootstrap elements or content containers and customize them in CSS, not to look too common and "Boostrappy". This application is created with use of Boostrap v 4.3.1.
+                                        </p>
+                                        <p>As mentioned aboved, I am also familiar with fundamentals of HTML 5 and CSS 3. I can manage the whole structure of HTML template with implementing external source files, placing the appropriate commands in head, and creating a layout of all the necessary and good looking elements in the <body class="">
+                                            CSS 3 helps me to customize all the work done by HTML and Boostrap. Positioning of elements, setting up the custom margins/paddings for all elements in various breakpoints scenarios with some decent backgrounds, borders and shadows, let my pages look better.</p>
+                                     </div>
+                                     <div class="tab-pane" id="javascript" role="tabpanel" aria-labelledby="javascript-tab">   
+                                        <p>Javascript is the second programming language, which I have decided to learn, after getting profficiency in Python. The goal to learn Javascript was to get an ability of creating dynamic webpages with some decent playground for the user. 
+                                            PyBreak's Players Stats corner is a good example of Javascript usage with dynamic dashboard of players performance giving the opportunity to compare with other players in various timespan and surface scenarios.</p>
+                                        <p>I can manage the backend data with help of Arrays and Objects iteration and create the output with events being performed on DOM elements. My plans for the future is optimizing those abilities with a better knowledge of jQuery as well.</p>
+                                     </div>
+                                     <div class="tab-pane" id="sql" role="tabpanel" aria-labelledby="sql-tab">   
+                                        <p>I have a modest experience in the topic of some simple queries needed to filter and manage the database tables. I have prepared the core tables and views as a backend mirror of pyBreak application in SQLite3, which allows the user to get all the information about the project's data instances.</p>
+                                        <p>During my professional job, I was supporting some data extractions from client's databases. Currently, I am learning MySQL and PostgreSQL fundamentals, to be more profficient SQL user in the future.</p>
+                                    </div>
+                                     <div class="tab-pane" id="envs" role="tabpanel" aria-labelledby="envs-tab">   
+                                        <ul>
+                                            <li><strong>PyCharm</strong> - my most used environment for working in Python 3. I am creating separated environments for each project, with customized set of needed libraries and prepare the ordered structure of scripts, which helps me to perform the work smoothly.</li>
+                                            <li><strong>Visual Studio Code</strong> - I am using VSC as a really helpful tool for Javascript work and all the frontend stuff. Support of many various languages with automatic matches and hints, helps me a lot in web development.</li>
+                                            <li><strong>Jupyter Notebook</strong> - profficiency of using iPython's browser env is useful for me in case of creating the Python code in step-by-step units. Support of all Python libraries and especially, powerful graphic features like Matplotlib and Seaborn, allowed me to create the initial concept of pyBreak analysis, before it was implemented as web application.</li>
+                                        </ul>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 p-3" id="hobbies">
+                        <div class="card border-0">
+                            <img class="card-img-top images" id="bvbpic" src="{% static 'portfolio/img/bvbpic.jpg' %}" alt="Card image cap">
+                            <div class="card-header">
+                                <h2 class="card-title my-4 my-xl-3">My hobbies</h2>
+                                <ul class="nav nav-tabs nav-fill nav-justify card-header-tabs" id="hobbies-card" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#running" data-toggle="tab" aria-controls="running" aria-selected="true"><img src="https://img.icons8.com/color/96/000000/running--v1.png"/>
+                                            <br>
+                                            <p>Running</p></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#sports" data-toggle="tab" aria-controls="sports" aria-selected="false"><img src="https://img.icons8.com/color/96/000000/retro-tv.png"/>
+                                            <br>
+                                            <p>Sports spectator</p></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#motorsport" data-toggle="tab" aria-controls="motorsport" aria-selected="false"><img src="https://img.icons8.com/color/96/000000/f1-race-car-top-veiw.png"/>
+                                            <br>
+                                            <p>Racing</p></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <div class="tab-content mt-3">
+                                    <div class="tab-pane active" id="running" role="tabpanel" aria-labelledby="running-tab">    
+                                        <p>My biggest hobby is definitely running. That's a sport, which I work out really actively. I have started running about 4 years ago, in goal to catch some health and get in good shape.
+                                            As a sports enthusiast with competitive spirit, I got caught up in it, and started to think about some running competitions. Wanting to expand my limits of endurance and speed, I have prepared myself to the Polish Halfmarathon Crown, what I have achieved in 2018 with 5 polish classic halfmarathons being finished with good results.
+                                            Today, my halfmarathon record is 1:28:48, achieved in 2019 Warsaw's "Polmaraton Praski". After a few decent 21.097km competitions, I have switched to marathon preparations. My first two marathons were being finished under 3,5 hours and now my goal is to start in some interesting 42.195 km competition twice a year, obviously with a pleasure of beating next personal best records!</p>
+                                        <p>Running is not just a competition for me. Each training is a great form of de-stress and collecting thoughts at the end of the day with some interesting podcasts sounding in the headphones.</p>
+                                    </div>
+    
+                                    <div class="tab-pane" id="sports" role="tabpanel" aria-labelledby="sports-tab">   
+                                        <p>Besides my running activities, I am huge passionate of many sport disciplines. I am watching sports like f.ex. football or tennis from the childhood. I also like to see my favorite disciplines as an area of some exctining data analysis, what led me to create the pyBreak project.</p>
+                                        <p>My favorite sports team is Borussia Dortmund - football club from German Bundesliga. I love the magic of "Yellow Wall" - the most amazing standing tribune in European football with delightful fan atmosphere. I support BVB since 2012 and had also an opportunity to see the match from "Yellow Wall" perspective a couple of times yet.</p>           
+                                    </div>
+    
+                                    <div class="tab-pane" id="motorsport" role="tabpanel" aria-labelledby="motorsport-tab">
+                                        <p>From many years, one of my favorite pastimes is motorsport. I am great fan of V10 engines era of Formula One races at the turn of the centuries with amazing battles of legendary drivers like Michael Schumacher or Mika Hakkinen. Motorcycles racing, like MotoGP championship with Valentino Rossi in the main role, and World Rally Championsip were always my hobbies as well. I'm still interested in motorsports, but nowadays, I am collecting some books, newspapers and DVDs from F1's golden era and try my hand in simracing games with my best friends.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="pybreak">       
+            <div class="pybreak-bg text-center" id="pybreak-row">
+                <h1>pyBreak</h1>
+                <h4>Web application about tennis, designed with all the skills mentioned in my portfolio.</h3>
+                <a class="btn btn-outline-light btn-lg" id="pybreak-button" href="{% url 'index' %}">LET'S GO</a>
+            </div>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link href="{% static 'portfolio/css/portfolio.css' %}" rel="stylesheet" type="text/css">
+    </body>
+</html>
