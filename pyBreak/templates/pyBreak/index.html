@@ -1,14 +1,256 @@
 {% load static %}
+<!doctype html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>PyBreak</title>
-    <link rel="stylesheet" href="{% static 'pyBreak/style.css' %}">
-</head>
-<body>
-    <h1>pyBreak - HomePage</h1>
-    <div>
-        <h3>Players' database information -><a href="http://www.tennisabstract.com/" class="button">ENTER</a></h3>
-    </div>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>pyBreak- Homepage</title>
+        <link rel="shortcut icon" href="#">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Raleway:wght@200;300;400;600&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    </head>
+
+    <body data-spy="scroll" data-target="#navbarSpy">
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a href="#" class="navbar-brand">
+                <h3 class="mb-0">pyBreak</h3>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSpy">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSpy">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#start" class="nav-link">Start</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#app-description" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#content-cards" class="nav-link">Content</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#data-sources" class="nav-link">Sources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section id="start">
+
+            <div class="landing">
+                <div class="home-wrap">
+                    <div class="home-inner">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="welcome text-center">
+                <h1>Welcome to pyBreak</h1>
+                <h3>Tennis Stats Application</h3>
+                <a class="btn btn-outline-light btn-lg" id="welcome-button" href="#app-description">LET'S START</a>
+            </div>
+
+        </section>
+
+
+        <section id="app-description" style="padding-top: 50px;">
+            <div class="container text-center mt-5" id="about-container">
+                <h1 class="mb-5">About pyBreak</h1>
+                <div class="row">
+                    <div class="col md-6 col-xl-3 offset-xl-1 p-3 px-xl-5">
+                        <h2>Tennis stats analysis</h2>
+                        <p class="lead mt-4">This app aims to present statistical data, which describes performance of the best tennis players ranked in TOP 200 of ATP Ranking.
+                            Data is being scraped from chosen reliable data sources with use of programming techniques and it is up-to-date. 
+                            Content section (placed below) shows summary tables which visualize which players perform the best in each area. Each player in the database has his own profile
+                            tralalala.
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-xl-3 p-3 px-xl-5">
+                        <h2>Odds statistics</h2>
+                        <p class="lead mt-4">The extra feature of that statistical app is that it contains also the stats which describes players performance depending on the pre-match odds.
+                            We can see, how each player in the database performs in different scenarios - whether he is favored by the role of match favorite, or is it likely, that the player surprises as an underdog.
+                        </p>
+                    </div>
+                    <div class="col-md-12 col-xl-3 offset-xl-1 p-3 px-xl-5">
+                        <h2>Technologies used</h2>
+                        <div class="row">
+                            <div class="col-4 col-xl-6">
+                                <img src="https://img.icons8.com/color/96/000000/python.png"/>
+                                <br>
+                                <p>Python 3</p>
+                            </div>
+                            <div class="col-4 col-xl-6">
+                                <img src="https://img.icons8.com/wired/96/000000/database-export.png"/>
+                                <br>
+                                <p>SQL</p>
+                            </div>
+
+                            <div class="col-4 col-xl-6">
+                                <img src="https://img.icons8.com/material-sharp/96/000000/django.png"/>
+                                <br>
+                                <p>Django</p>
+                            </div>
+                            <div class="col-4 col-xl-6">
+                                <img src="https://img.icons8.com/color/96/000000/bootstrap.png"/>
+                                <br>
+                                <p>Bootstrap 4</p>
+                            </div>
+
+                            <div class="col-4 col-xl-6">
+                                <img src="https://img.icons8.com/color/96/000000/javascript.png"/>
+                                <br>
+                                <p>Javascript</p>
+                            </div>
+                            <div class="col-4 col-xl-6">
+                                <img src="https://img.icons8.com/carbon-copy/96/000000/html.png"/>
+                                <br>
+                                <p>HTML/CSS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="content-cards">
+            <div class="container-fluid text-center mt-2 p-3">
+                <h1 class="my-5">pyBreak Content</h1>
+                <div class="row m-2">
+                    <div class="col-lg-6 col-xl-5 offset-xl-1 p-3">
+                        <div class="card">
+                            <div class="card-inner">
+                                <img src="{% static 'pyBreak/img/sunshine.jpg' %}" alt="" class="card-img-top">
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title">Players Stats</h2>
+                                <div class="row">
+                                    <div class="col-10 offset-1">
+                                        <p class="card-text">Presentation of data regarding performance of each player ranked in TOP 200 of ATP Ranking.
+                                            Main page of this site contains the tables showing stats of all players from up-to-date ranking in areas of serve, return and bookmakers' odds scenarios.
+                                        </p>
+                                        <p class="card-text">You can choose or search for your player, to enter his profile in the database with some nice graphic charts, that show player's performance.
+                                        </p>
+                                        <p class="card-text">Each player's profile includes options of data filtering in terms of period of time and court surface. You can not only view the player's stats graphics, but also compare him with any other player from the base and see who plays better in particular period or surface. 
+                                        </p>
+                                        <a href="{% url 'players-stats' %}" class="btn btn-lg mt-3 tabs-button">Enter Players Stats</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-5 p-3">
+                        <div class="card">
+                            <div class="card-inner">
+                                <img src="{% static 'pyBreak/img/clayracquet.jpg' %}" alt="" class="card-img-top">  
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title">Analysis Corner</h2>
+                                <div class="row">
+                                    <div class="col-10 offset-1">
+                                        <p class="card-text">Presentation of data regarding performance of each player ranked in TOP 200 of ATP Ranking.
+                                            Main page of this site contains the tables showing stats of all players from up-to-date ranking in areas of serve, return and bookmakers' odds scenarios.
+                                        </p>
+                                        <p class="card-text">You can choose or search for your player, to enter his profile in the database with some nice graphic charts, that show player's performance.
+                                        </p>
+                                        <p class="card-text">Each player's profile includes options of data filtering in terms of period of time and court surface. You can not only view the player's stats graphics, but also compare him with any other player from the base and see who plays better in particular period or surface. 
+                                        </p>
+                                        <a href="https://bitly.com/pyBreak" class="btn btn-lg mt-3 tabs-button">Enter Analysis Corner</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="space"></div>
+
+        <section id="data-sources" style="padding-top: 20px;">       
+            <div class="row sources-bg">
+                <div class="col-xl-8 offset-xl-2 caption text-center" id="sources-row">
+                    <h1 class="mt-3">DATA SOURCES</h1>
+                    <hr>
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <a href="http://tennisabstract.com/" target="_blank"><img src="{% static 'pyBreak/img/tennis-abstract.png' %}"></a>
+                                <br>
+                                <h4 class="mt-4" style="text-align: justify">Source of matches data for all the players who compete in professional tennis tournaments.
+                                    Website lead by Jeff Sackmann - great data analyst and tennis enthusiast, contains up-to-date statistics related with current and historical matches from ATP Tour and ATP Challenger Tour competitions. Besides that, author conducts very interesting own analysis, f.ex. his own idea's Elo Ranking, which ranks players according to their performance. There are also probability predictions of the chances of particular player participating in the current tournaments.
+                                </h4>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="http://tennisexplorer.com/" target="_blank"><img src="{% static 'pyBreak/img/tennis-explorer.png' %}"></a>
+                                <br>
+                                <h4 class="mt-4" style="text-align: justify">Website containing huge base of historical bookmakers' odds for all professional matches, that have taken place over many of the last years. It was crucial task to get the data of same matches that were included in the statistics from TennisAbstract site, and match them in such a way as to get the possibility to present the analysis of each player's performance depending on the pre-match scenario. This website is great source of stats for everyone who likes to bet on sportsbooks.</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <footer>
+                <div class="container">
+
+                    <div class="row text-center justify-content-center pt-5">
+                      <h1>Portfolio & Contact</h1>
+                    </div>
+
+                    <div class="row d-flex text-center justify-content-center mb-lg-0 mb-4">
+                      <div class="col-md-8 col-12 mt-2 text-center">
+                          <div class="row">
+                            <div class="col-lg-6">
+                                <p style="line-height: 2rem">Please feel free to invite my portfolio webpage. 
+                                    You can find there an information about my programming skills, plans for future development and summary of my current professional work experience.</p>
+                              </div>
+                              <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                                <a href="{% url 'portfolio' %}" class="btn btn-lg tabs-button">Portfolio</a>
+                              </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-lg-6">
+                                <p style="line-height: 2rem">You can also visit my LinkedIn account and see the coding details of pyBreak project on my GitHub profile. </p>
+                            </div>
+                            <div class="col-lg-6">
+                                <a href="https://www.linkedin.com/in/maciej-molenda-973a5819a/" target="_blank" class="mr-3">
+                                    <i class="fab fa-github fa-3x text-white"></i>
+                                </a>
+                                <a href="https://www.github.com/maciejmolenda" target="_blank" class="ml-3">
+                                    <i class="fab fa-linkedin-in fa-3x text-white"></i>
+                                </a>
+                                <p class="mt-3"><i class="fas fa-envelope fa-0.7x d-lg-none d-xl-inline"></i> maciej.molenda@protonmail.com</p>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="footer-copyright text-center py-3">© 2020 pyBreak</div>
+
+            </footer>
+        </section>
+        
+        <!-- <script type="text/javascript">
+            window.addEventListener("hashchange", function() { scrollBy(0, -50)});
+        </script> -->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.js"></script>
+        <link href="{% static 'pyBreak/css/index.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'pyBreak/css/fixed.css' %}" rel="stylesheet" type="text/css">
+    </body>
 </html>

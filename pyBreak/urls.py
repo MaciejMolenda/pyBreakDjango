@@ -3,6 +3,7 @@ from . import views
 
 urlpatterns = [
     # path('pairenis.html', views.pyBreak_startpage, name='pairenis'),
-    # path('players.html', views.players, name='players'),
-    # path('index.html', views.index, name='index')
+    path('index.html', views.startpage, name='index'),
+    path('players/<str:id>', views.players, name='players'),
+    path('players-stats.html', views.index, name='players-stats'),
     ]

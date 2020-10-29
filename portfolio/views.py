@@ -3,4 +3,4 @@ from django.http import HttpResponse
 
 # Create your views here.
 def startpage(request):
-    return render(request, 'portfolio/index.html')
+    return render(request, 'portfolio/portfolio.html')
