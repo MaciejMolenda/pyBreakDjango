@@ -48,15 +48,15 @@ body {
 }
 
 .welcome h1 {
-  font-size: 4.5rem;
+  font-size: 3rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
   text-shadow: 0.5rem 0.5rem 1.5rem black;
 }
 
 .welcome h3 {
-  margin-top: 2rem;
-  font-size: 2.5rem;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
   font-weight: 400;
   letter-spacing: 0.1rem;
   text-shadow: 0.4rem 0.4rem 1.2rem black;
@@ -73,7 +73,7 @@ body {
 .btn-group-lg>.btn, .btn-lg {
   background-color: rgb(51, 170, 51, .6);
   border-radius: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 1.6;
   box-shadow: 0.4rem 0.4rem 1.2rem black;
 }
@@ -145,7 +145,7 @@ body {
 .card-title {
   font-family: 'Quicksand', sans-serif;
   color: black;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 600;
   letter-spacing: 0.2rem;
 }
@@ -154,6 +154,7 @@ body {
   font-family: 'Quicksand', sans-serif;
   letter-spacing: 0.1rem;
   text-align: justify;
+  font-size: 0.8rem!important;
 }
 
 .grid-row {
@@ -211,7 +212,7 @@ body {
   background-color: rgb(23, 83, 173);
   color: white;
   border-radius: 1rem;
-  font-size: 1.4rem;
+  font-size: 1rem;
   line-height: 1.7;
   box-shadow: 0.3rem 0.3rem 0.8rem black;
   text-shadow: 0.2rem 0.2rem 0.6rem black;
@@ -253,8 +254,9 @@ body {
 }
 
 #data-sources img {
-  max-height: 62px;
+  max-height: 54px;
   border-radius: 0.5rem;
+  max-width: 280px;
 }
 
 #data-sources img:hover {
@@ -263,7 +265,7 @@ body {
 }
 
 #data-sources h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 600;
   letter-spacing: 0.2rem;
   color: white;
@@ -274,6 +276,7 @@ body {
 
 #data-sources h4 {
   letter-spacing: 0.1rem;
+  font-size: 1rem!important;
 }
 
 #data-sources hr {
@@ -336,6 +339,37 @@ body {
   #space {
     padding: 8vw;
   }
+
+  .welcome h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    text-shadow: 0.5rem 0.5rem 1.5rem black;
+  }
+  
+  .welcome h3 {
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    text-shadow: 0.4rem 0.4rem 1.2rem black;
+  }
+
+  .btn-group-lg>.btn, .btn-lg {
+    font-size: 1.2rem;
+  }
+
+  .tabs-button {
+    font-size: 1.4rem;
+  }
+
+  .card-text {
+    font-size: 1rem!important;
+  }
+
+  .card-title {
+    font-size: 2.2rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -350,10 +384,28 @@ body {
   .tabs-button {
     font-size: 1.7rem;
   }
+
+  #data-sources h4 {
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem!important;
+  }
+
+  .card-title {
+    font-size: 2.5rem;
+  }
+
+  #data-sources h1 {
+    font-size: 3.5rem;
+  }
+
 }
 
 @media (min-width: 1200px) {
   #about-container {
     max-width: 100%;
+  }
+
+  #data-sources h1 {
+    font-size: 4rem;
   }
 }

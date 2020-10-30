@@ -86,6 +86,10 @@ h3 {
     font-size: 36px;
 }
 
+#description .lead {
+  font-size: 0.8rem!important;
+}
+
 #description span {
   color: white;
   font-weight: 600;
@@ -98,11 +102,11 @@ h3 {
 }
 
 #selection {
-  max-width: 320px;
+  max-width: 280px!important;
 }
 
 .jumbo-font {
-  font-size: 2.5rem!important;
+  font-size: 1.8rem!important;
   font-weight: 700;
 }
 
@@ -168,7 +172,8 @@ table {
     background: #fff;
     border-radius: 5px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
-  }
+    font-size: 0.5rem;
+}
 
 td:first-child, th:first-child {
   position: sticky;
@@ -342,7 +347,7 @@ tbody:hover > tr:hover a {
   }
   
   .jumbo-font {
-    font-size: 3.5rem!important;
+    font-size: 3.2rem!important;
     font-weight: 700;
   }
 
@@ -356,6 +361,14 @@ tbody:hover > tr:hover a {
 
   .btn-group-lg>.btn, .btn-lg {
     font-size: 1rem;
+  }
+
+  #selection {
+    max-width: 320px!important;
+  }
+  
+  #description .lead {
+    font-size: 1rem!important;
   }
 }
 
@@ -373,6 +386,10 @@ tbody:hover > tr:hover a {
   .btn-group-lg>.btn, .btn-lg {
     font-size: 1.2rem;
   }
+
+  table {
+    font-size: 0.6rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -384,12 +401,16 @@ tbody:hover > tr:hover a {
     }
 
     .jumbo-font {
-      font-size: 4rem!important;
+      font-size: 3.9rem!important;
       font-weight: 700;
     }
 
     tbody:hover > tr td {
       opacity: 0.6;
+    }
+
+    table {
+      font-size: 0.8rem;
     }
 }
 
@@ -403,5 +424,9 @@ tbody:hover > tr:hover a {
   .jumbo-font {
     font-size: 5rem!important;
     font-weight: 700;
+  }
+
+  table {
+    font-size: 1rem;
   }
 }

@@ -173,11 +173,11 @@ tbody:hover > tr:hover a {
   justify-content: center;
   align-items: center;
   color: #fafafa;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
   letter-spacing: 0.1rem;
   text-shadow: 0.1rem 0.1rem 0.2rem black;
-  width: 300px;
+  width: 250px;
   word-wrap:break-word;
   background-color: #df2e2b;
   box-shadow: 0px 0px 5px rgba(0.3, 0.3, 0.3, 0.8);
@@ -229,7 +229,15 @@ tbody:hover > tr:hover a {
 }
 
 .data-table thead th {
+  font-size: 0.35rem;
+}
+
+.data-table tbody tr {
   font-size: 0.5rem;
+}
+
+.highchart {
+  height: 350px;
 }
 
 #spider-div {
@@ -301,6 +309,7 @@ tbody:hover > tr:hover a {
 .btn {
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
+  font-size: 0.7rem;
 }
 
 .jumbotron {
@@ -311,15 +320,46 @@ p {
   font-family: 'Raleway', sans-serif;
 }
 
+@media (min-width: 576px) {
+  .data-table thead th {
+    font-size: 0.6rem;
+  }
+
+  .data-table tbody tr {
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+  }
+
+  .scenario {
+    width: 285px;
+  }
+}
+
 @media (min-width: 768px) {
   .data-table thead th {
     font-size: 0.7rem;
+  }
+
+  .highchart {
+    height: auto;
   }
 }
 
 @media (min-width: 992px) {
   .data-table thead th {
     font-size: 0.5rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+  }
+
+  .scenario {
+    width: 300px;
+    font-size: 1.2rem;
   }
 
   #comparedesc {
@@ -335,6 +375,16 @@ p {
   .b {order: 2;}
   .c {order: 3;}
   .d {order: 4;}
+}
+
+@media (min-width: 1200px) {
+  .data-table tbody tr {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
 }
 
 @media (min-width: 1440px) {

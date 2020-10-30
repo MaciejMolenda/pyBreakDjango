@@ -55,7 +55,7 @@
                 Below, you can see three tables with players' stats grouped in three areas - the most important numbers in both case of <span>serve</span> and <span>return</span>, and also percentage of matches won depending on the pre-match chances estimated by the <span>bookmakers</span>. Every profile has an interesting option of stats <span>comparison with any other player</span> from pyBreak base.
               </p>
               <p class="lead">Players are sorted by ATP Ranking position in each table, but you can sort them by yourself in any order based on each column you want to analyze.
-                <u>You can open any player's profile by searching for it in dropdown menu, or searching and clicking player's name in any of below tables</u>.
+                <span>You can open any player's profile by searching for it in dropdown menu, or searching and clicking player's name in any of below tables</span>.
               </p>
             </div>
             <div id="select-box" class="my-4 col-lg-6 mt-lg-0 text-center align-items-center">
@@ -63,7 +63,7 @@
               <select class="js-example-basic-single form-control" id="selection">
                 <option></option>
                 {% for man in player %}
-                <option value="http://127.0.0.1:8000/pyBreak/players/{{ man.id }}">#{{man.Rank}} {{ man.Name }}</a></option>
+                <option value="https://maciejmolenda.pythonanywhere.com/pyBreak/players/{{ man.id }}">#{{man.Rank}} {{ man.Name }}</a></option>
                 {% endfor %}
               </select>
               
@@ -99,7 +99,7 @@
                   {% for item in player %}
                   <tr>
                     <td>{{ item.Rank }}</td>
-                    <td><a href="http://127.0.0.1:8000/pyBreak/players/{{ item.id }}" {{ item.id }}>{{ item.Name }}</a></td>
+                    <td><a href="https://maciejmolenda.pythonanywhere.com/pyBreak/players/{{ item.id }}" {{ item.id }}>{{ item.Name }}</a></td>
                     <td>{{ item.First_serve_accuracy|floatformat:1 }}</td>
                     <td>{{ item.First_serve_points|floatformat:1 }}</td>
                     <td>{{ item.Second_serve_points|floatformat:1 }}</td>
@@ -142,7 +142,7 @@
                   {% for item in player %}
                   <tr>
                     <td>{{ item.Rank }}</td>
-                    <td><a href="http://127.0.0.1:8000/pyBreak/players/{{ item.id }}" {{ item.id }}>{{ item.Name }}</a></td>
+                    <td><a href="https://maciejmolenda.pythonanywhere.com/pyBreak/players/{{ item.id }}" {{ item.id }}>{{ item.Name }}</a></td>
                     <td>{{ item.Return_1st_serve_points|floatformat:1 }}</td>
                     <td>{{ item.Return_2nd_serve_points|floatformat:1 }}</td>
                     <td>{{ item.Breakpoints_converted_ratio|floatformat:1 }}</td>
@@ -186,7 +186,7 @@
                   {% for item in player %}
                   <tr>
                     <td>{{ item.Rank }}</td>
-                    <td><a href="http://127.0.0.1:8000/pyBreak/players/{{ item.id }}" {{ item.id }}>{{ item.Name }}</a></td>
+                    <td><a href="https://maciejmolenda.pythonanywhere.com/pyBreak/players/{{ item.id }}" {{ item.id }}>{{ item.Name }}</a></td>
                     <td></td>
                     <td></td>
                     <td></td>

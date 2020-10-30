@@ -92,7 +92,7 @@ hr {
 }
 
 .infobox h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 600;
     color: #f0f0f0;
     letter-spacing: 0.2rem;
@@ -100,6 +100,7 @@ hr {
 }
 
 .infobox p {
+    font-size: 0.8rem!important;
     color: #f0f0f0;
     letter-spacing: 0.1rem;
 }
@@ -131,7 +132,7 @@ hr {
     background-color: rgb(173, 23, 23);
     color: white;
     border-radius: 1rem;
-    font-size: 1.4rem;
+    font-size: 0.8rem;
     line-height: 1.7;
     box-shadow: 0.3rem 0.3rem 0.8rem black;
     text-shadow: 0.2rem 0.2rem 0.6rem black;
@@ -163,6 +164,24 @@ hr {
 
 #facts-box {
     border: 2px dashed #252525!important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#facts-box h2 {
+    font-size: 1.8rem;
+}
+
+#facts-box h4 {
+    font-size: 1.2rem;
+}
+
+#facts-box .lead {
+    font-size: 0.9rem;
+}
+
+#facts-box img {
+    max-width: 100px;
 }
 
 li {
@@ -259,6 +278,8 @@ li {
     font-weight: 600;
 }
 
+
+
 @media (min-width: 756px) {
     .nav-link > img {
         height: 40px;
@@ -317,6 +338,18 @@ li {
 
     #facts-box > div:last-child {
         border-right: none!important;
+    }
+
+    #facts-box h2 {
+        font-size: 2rem;
+    }
+
+    #facts-box h4 {
+        font-size: 1.5rem;
+    }
+
+    #facts-box .lead {
+        font-size: 1.2rem;
     }
 
     .nav-link > p {
