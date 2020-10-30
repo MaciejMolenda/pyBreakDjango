@@ -162,6 +162,10 @@ hr {
     text-align: justify;
 }
 
+#about-container h1 {
+    font-size: 2.2rem;
+}
+
 #facts-box {
     border: 2px dashed #252525!important;
     margin-right: auto;
@@ -325,6 +329,10 @@ li {
         max-width: 85%;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    #about-container h1 {
+        font-size: 2.5rem;
     }
 
     #facts-box > div {
